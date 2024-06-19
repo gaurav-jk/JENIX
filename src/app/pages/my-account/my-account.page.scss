@@ -1,0 +1,39 @@
+button {
+    background-color: black;
+    color: rgb(203, 188, 130);
+    border: none;
+    padding: 0.5em 1em;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1em;
+}
+button:hover {
+    background-color: rgb(203, 188, 130);
+    color: black;
+}
+.container {
+    padding: 16px;
+    text-align: center;
+  }
+  
+  h2 {
+    margin-top: 32px;
+    margin-bottom: 32px;
+    font-weight: bold;
+  }
+  
+  ion-item {
+    margin-bottom: 16px;
+    
+  }
+  
+  ion-button {
+    margin-top: 16px;
+    background-color: black;
+    color: rgb(203, 188, 130);
+  }
+  
+  .login-link {
+    margin-top: 16px;
+  }
+  

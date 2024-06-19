@@ -1,20 +1,390 @@
 <ion-header [translucent]="true">
   <ion-toolbar>
+    <!-- <ion-item class="main">
+      FREE HOME DELIVERY for any Order<br>
+      GST Invoice for Business Buyer
+    </ion-item> -->
     <ion-title>
-      Blank
+      <img
+        alt="logo"
+        id="header_logo"
+        height="40"
+        src="../../assets/icon/LOGO.png"
+      />
     </ion-title>
+    <ion-buttons slot="start">
+      <ion-menu-button menu="main-menu"></ion-menu-button>
+    </ion-buttons>
   </ion-toolbar>
 </ion-header>
-
 <ion-content [fullscreen]="true">
-  <ion-header collapse="condense">
-    <ion-toolbar>
-      <ion-title size="large">Blank</ion-title>
-    </ion-toolbar>
-  </ion-header>
+  <swiper-container
+    [modules]="swiperModules"
+    [slidesPerView]="1"
+    [centeredSlides]="true"
+    [autoPlay]="{delay: 500, enabled:true}"
+  >
+    <swiper-slide>
+      <img src="../../assets/icon/1.png" />
+    </swiper-slide>
+    <swiper-slide>
+      <img src="../../assets/icon/2.png" />
+    </swiper-slide>
+    <swiper-slide>
+      <img src="../../assets/icon/3.png" />
+    </swiper-slide>
+    <swiper-slide>
+      <img src="../../assets/icon/4.png" />
+    </swiper-slide>
+    <swiper-slide>
+      <img src="../../assets/icon/5.png" />
+    </swiper-slide>
+    <swiper-slide>
+      <img src="../../assets/icon/6.jpg" />
+    </swiper-slide>
+    <swiper-slide>
+      <img src="../../assets/icon/7.jpg" />
+    </swiper-slide>
+    <swiper-slide>
+      <img src="../../assets/icon/8.png" />
+    </swiper-slide>
+  </swiper-container>
+  <ion-grid>
+    <ion-row>
+      <ion-col size="6">
+        <ion-card>
+          <img src="../../assets/icon/11.png" alt="Card image 1" />
+          <ion-card-header>
+            <ion-card-title>Surveillance</ion-card-title>
+          </ion-card-header>
+        </ion-card>
+      </ion-col>
+      <ion-col size="6">
+        <ion-card>
+          <img src="../../assets/icon/12.png" alt="Card image 2" />
+          <ion-card-header>
+            <ion-card-title>Access Control ( Lock )</ion-card-title>
+          </ion-card-header>
+        </ion-card>
+      </ion-col>
+    </ion-row>
+    <ion-row>
+      <ion-col size="6">
+        <ion-card>
+          <img src="../../assets/icon/13.png" alt="Card image 1" />
+          <ion-card-header>
+            <ion-card-title>Intercom PABX</ion-card-title>
+          </ion-card-header>
+        </ion-card>
+      </ion-col>
+      <ion-col size="6">
+        <ion-card>
+          <img src="../../assets/icon/14.jpg" alt="Card image 2" />
+          <ion-card-header>
+            <ion-card-title>Smart Home Automation</ion-card-title>
+          </ion-card-header>
+        </ion-card>
+      </ion-col>
+    </ion-row>
+    <ion-row>
+      <ion-col size="6">
+        <ion-card>
+          <img src="../../assets/icon/15.png" alt="Card image 1" />
+          <ion-card-header>
+            <ion-card-title>WiFi Camera - Stand Alone System</ion-card-title>
+          </ion-card-header>
+        </ion-card>
+      </ion-col>
+      <ion-col size="6">
+        <ion-card>
+          <img src="../../assets/icon/16.png" alt="Card image 2" />
+          <ion-card-header>
+            <ion-card-title>GPS Tracker</ion-card-title>
+          </ion-card-header>
+        </ion-card>
+      </ion-col>
+    </ion-row>
+    <ion-row>
+      <ion-col size="6">
+        <ion-card>
+          <img src="../../assets/icon/17.png" alt="Card image 1" />
+          <ion-card-header>
+            <ion-card-title>4G Router</ion-card-title>
+          </ion-card-header>
+        </ion-card>
+      </ion-col>
+      <ion-col size="6">
+        <ion-card>
+          <img src="../../assets/icon/18.png" alt="Card image 2" />
+          <ion-card-header>
+            <ion-card-title>Networking and Peripheral</ion-card-title>
+          </ion-card-header>
+        </ion-card>
+      </ion-col>
+    </ion-row>
+    <ion-row>
+      <ion-col size="6">
+        <ion-card>
+          <img src="../../assets/icon/19.png" alt="Card image 1" />
+          <ion-card-header>
+            <ion-card-title>Security Alarm System</ion-card-title>
+          </ion-card-header>
+        </ion-card>
+      </ion-col>
+      <ion-col size="6">
+        <ion-card>
+          <img src="../../assets/icon/20.jpg" alt="Card image 2" />
+          <ion-card-header>
+            <ion-card-title>Cable Convertor Connector</ion-card-title>
+          </ion-card-header>
+        </ion-card>
+      </ion-col>
+    </ion-row>
+    <ion-row>
+      <ion-col size="6">
+        <ion-card>
+          <img src="../../assets/icon/21.png" alt="Card image 1" />
+          <ion-card-header>
+            <ion-card-title>Signal Booster</ion-card-title>
+          </ion-card-header>
+        </ion-card>
+      </ion-col>
+      <ion-col size="6">
+        <ion-card>
+          <img src="../../assets/icon/22.png" alt="Card image 2" />
+          <ion-card-header>
+            <ion-card-title>Tools and Clip Pin Tape</ion-card-title>
+          </ion-card-header>
+        </ion-card>
+      </ion-col>
+    </ion-row>
+    <ion-row>
+      <ion-col size="6">
+        <ion-card>
+          <img src="../../assets/icon/23.png" alt="Card image 1" />
+          <ion-card-header>
+            <ion-card-title>Robotics</ion-card-title>
+          </ion-card-header>
+        </ion-card>
+      </ion-col>
+      <ion-col size="6">
+        <ion-card>
+          <img src="../../assets/icon/24.png" alt="Card image 2" />
+          <ion-card-header>
+            <ion-card-title>Spy Micro Hidden Camera</ion-card-title>
+          </ion-card-header>
+        </ion-card>
+      </ion-col>
+    </ion-row>
+    <ion-row>
+      <ion-col size="6" height="2">
+        <ion-card>
+          <img src="../../assets/icon/25.jpg" alt="Card image 1" />
+          <ion-card-header>
+            <ion-card-title>Public Parking Management</ion-card-title>
+          </ion-card-header>
+        </ion-card>
+      </ion-col>
+    </ion-row>
+  </ion-grid>
 
-  <div id="container">
-    <strong>Ready to create an app?</strong>
-    <p>Start with Ionic <a target="_blank" rel="noopener noreferrer" href="https://ionicframework.com/docs/components">UI Components</a></p>
+  <div class="product-grid">
+    <div class="product-card">
+      <img src="../../assets/icon/Wifi-Lock-Relay-PCB.jpg" alt="Product 1">
+      <h2></h2>
+      <p>Jenix Tuya Smartlife app wifi relay kit lock PCB 433 Mhz Universal Wireless Remote Control Switch  DC 12V Wifi 1CH Relay Receiver ModuleJenix Tuya Smartlife app wifi relay kit lock PCB 433 Mhz Universal Wireless Remote Control Switch DC 12V Wifi 1CH Relay Receiver Module</p>
+      <p class="price">₹1249</p>
+      <ion-item>
+        <ion-label>Quantity</ion-label>
+        <button (click)="decrement()" ion-button>-</button>
+        <ion-input [(ngModel)]="quantity" type="number" min="1" readonly></ion-input>
+        <button (click)="increment()" ion-button>+</button>
+      </ion-item>      
+      <ion-item>
+      <ion-label>Quantity</ion-label>
+      <button (click)="decrement()" ion-button>-</button>
+      <ion-input [(ngModel)]="quantity" type="number" min="1" readonly></ion-input>
+      <button (click)="increment()" ion-button>+</button>
+    </ion-item>
+    <!-- <ion-row *ngIf="!item?.quantity || item?.quantity <=0"(click)="quantityplus(item,i)">
+      <ion-text class="ion-padding-horizontal" color="success">Add</ion-text>
+    </ion-row>
+  
+    <ion-row *ngIf="item?.quantity > 0">
+      <ion-icon color="success" name="remove-outline" (click)="quantityMinus(item, i)"></ion-icon>
+      <ion-text class="ion-text-center quantity" color="success">{{item.quantity}}</ion-text>
+      <ion-icon color="success" name="remove-outline" (click)="quantityplus(item, i)"></ion-icon>
+    </ion-row> -->
+      <button expand="full" (click)="addToCart()">Add to Cart</button>
+    </div>
+  <div class="product-card">
+    <img src="../../assets/icon/Front-SMart-Glass-Door-Lock.jpg" alt="Product 2">
+    <h2></h2>
+    <p>Smart Glass Door Lock Digital Glass Lock ,Unlock by Bluetooth, Mobile App, Fingerprint, PIN, RFID Card for 10-12 mm Glass Doors onlySmart Glass Door Lock Digital Glass Lock ,Unlock by Bluetooth, Mobile App, Fingerprint, PIN, RFID Card for 10-12 mm Glass Doors only</p>
+    <p class="price">₹3999</p>
+    <button>Add to Cart</button>
+</div>
+<div class="product-card">
+  <img src="../../assets/icon/hotel-rfid-door-locks-L.jpg" alt="Product 1">
+  <h2></h2>
+  <p>jenix Hotel Lock digital smart RFID card BLE hotel room door lock TTLock mobile app hotel managment system compatible lock JX HT 777 - Silver Color  - LEFT Inside Openjenix Hotel Lock digital smart RFID card BLE hotel room door lock TTLock mobile app hotel managment system compatible lock JX HT 777 - Silver Color - LEFT Inside Open</p>
+  <p class="price">₹3599</p>
+  <button>Add to Cart</button>
+</div>
+<div class="product-card">
+  <img src="../../assets/icon/btk8bor.jfif" alt="Product 1">
+  <h2></h2>
+  <p>jenix Smart Wireless Glass Door Lock with Remote, Touch Keypad Keyless Electric Security Biometric Fingerprint Password  RFID card Swipe Lock  Doorbell Function for Home Office   JXFGL1 - remotejenix Smart Wireless Glass Door Lock with Remote, Touch Keypad Keyless Electric Security Biometric Fingerprint Password RFID card Swipe Lock Doorbell Function for Home Office JXFGL1 - remote</p>
+  <p class="price">₹5500</p>
+  <button>Add to Cart</button>
+</div>
+<div class="product-card">
+  <img src="../../assets/icon/17123042146959full-glass-lock-kit.jpg" alt="Product 1">
+  <h2></h2>
+  <p>Jenix WiFi Tuya Smart Access Control System Kit RFID Access Controller IP68 Waterproof 13.56MHz Reader + Electric Drop Bolt Lock Full Glass Door, Card, OTP, Phone APP Pasword Unlock - Kit FGL RFIDJenix WiFi Tuya Smart Access Control System Kit RFID Access Controller IP68 Waterproof 13.56MHz Reader + Electric Drop Bolt Lock Full Glass Door, Card, OTP, Phone APP Pasword Unlock - Kit FGL RFID</p>
+  <p class="price">₹5299</p>
+  <button>Add to Cart</button>
+</div>
+<div class="product-card">
+  <img src="../../assets/icon/17123009386268front.jpg" alt="Product 1">
+  <h2></h2>
+  <p>Jenix WiFi Tuya Smart Access Control System Kit RFID Access Controller IP68 Waterproof 13.56MHz Reader + Electric Drop Bolt Lock, Card, OTP, Phone APP Pasword Unlock - Kit OSBL RFID
+    rating star unfilledrating star unfilledrating star unfilledrating star unfilledrating star unfilled</p>
+  <p class="price">₹5999</p>
+  <button>Add to Cart</button>
+</div>
+<div class="product-card">
+  <img src="../../assets/icon/17122361727302Mini-433Mhz-Chip-reciver-with-remote-1.jpg" alt="Product 1">
+  <h2></h2>
+  <p>433MHz  RF Mini Relay Wireless Remote Control Switch Receiver 1CH, and remote for access control , siren, door lock,433MHz RF Mini Relay Wireless Remote Control Switch Receiver 1CH, and remote for access control , siren, door lock,</p>
+  <p class="price">₹660</p>
+  <button>Add to Cart</button>
+</div>
+<div class="product-card">
+  <img src="../../assets/icon/171223488432671-remote-1-kit.jpg" alt="Product 1">
+  <h2></h2>
+  <p>433Mhz 12V DC Relay  with 1 remote for door lock sliding gate motor access control433Mhz 12V DC Relay with 1 remote for door lock sliding gate motor access control</p>
+  <p class="price">₹650</p>
+  <button>Add to Cart</button>
+</div>
+<div class="product-card">
+  <img src="../../assets/icon/17111049112755narrow-smart-lock-for-alumnium-door.jpg" alt="Product 1">
+  <h2></h2>
+  <p>Narrow Style Smart Lock (SW) with 5-way Unlock  waterproof indoor or outdoor door slim  smart lock for aluminium frame doorNarrow Style Smart Lock (SW) with 5-way Unlock waterproof indoor or outdoor door slim smart lock for aluminium frame door</p>
+  <p class="price">₹10500</p>
+  <button>Add to Cart</button>
+</div>
+<div class="product-card">
+  <img src="../../assets/icon/17071373217908eeca2271-64da-43a0-86e7-23482aab6586.jpg" alt="Product 1">
+  <h2></h2>
+  <p>Surface Mount Door Exit Button - Open Surface door exit button ( bell type rocker switch)Surface Mount Door Exit Button - Open Surface door exit button ( bell type rocker switch)</p>
+  <p class="price">₹199</p>
+  <button>Add to Cart</button>
+</div>
+    <div class="product-card">
+        <img src="../../assets/icon/jenix 135.jpg" alt="Product 1">
+        <h2>Jenix K135 BT</h2>
+        <p>Tuya smart life access control with RFID, Password, Fingerprint, Mobile app waterproof display</p>
+        <p class="price">₹3,550</p>
+        <button>Add to Cart</button>
+    </div>
+    <div class="product-card">
+        <img src="../../assets/icon/jenix 155.jpg" alt="Product 2">
+        <h2>Jenix K155 WiFi</h2>
+        <p>Smart Finger, Password, RFID, Mobile app access control cum attendance waterproof</p>
+        <p class="price">₹3,650</p>
+        <button>Add to Cart</button>
+    </div>
+</div>
+
+  <div class="subscription-box">
+    <h1>Direct buy From security system manufacturer, importer in India</h1>
+    <p>Lowest price with best quality</p>
+    <p>Get customised security system electronic products on demand</p>
+    <div class="email-subscription">
+      <input type="email" placeholder="example@gmail.com" />
+      <button ion-button>SUBSCRIBE</button>
+    </div>
   </div>
+  <ion-item-group class="centered-group">
+    <ion-item-divider>
+      <ion-label>Categories</ion-label>
+    </ion-item-divider>
+    <!-- <ion-item button (click)="openCategory('Surveillance')">Surveillance</ion-item> -->
+    <ion-item button>Surveillance</ion-item>
+    <ion-item button>Access Control ( Lock )</ion-item>
+    <ion-item button>Access Control ( Lock )</ion-item>
+    <ion-item button>Intercom PABX</ion-item>
+    <ion-item button>Smart Home Automation</ion-item>
+    <ion-item button>WiFi Camera - Stand Alone System</ion-item>
+    <ion-item button>GPS Tracker</ion-item>
+    <ion-item button>4G Router</ion-item>
+    <ion-item button>Networking and Peripheral</ion-item>
+    <ion-item button>Security Alarm System</ion-item>
+    <ion-item button>Cable Convertor Connector</ion-item>
+    <ion-item button>Signal Booster</ion-item>
+    <ion-item button>Show More</ion-item>
+    <ion-item button>Show All Categories</ion-item>
+    <ion-item-divider>
+      <ion-label>Company</ion-label>
+    </ion-item-divider>
+    <ion-item button>About Us</ion-item>
+    <ion-item button>Contact Us</ion-item>
+    <ion-item button>Privacy Policy</ion-item>
+    <ion-item button>Terms and Conditions</ion-item>
+    <ion-item button>Refund Policy</ion-item>
+    <ion-item button>Shipping Policy</ion-item>
+    <ion-item-divider>
+      <ion-label>Contact</ion-label>
+    </ion-item-divider>
+    <ion-item button>7240226566</ion-item>
+    <ion-item button>jenixjain</ion-item>
+    <ion-item button
+      >Jain enterprises, 63/79 Heera Path, Mansarovar, jaipur, rajasthan, India
+      - 302020</ion-item
+    >
+    <ion-item button>Warranty and RMA</ion-item>
+  </ion-item-group>
 </ion-content>
+<!-- <ion-list>
+  <ion-title>
+    My Account
+  </ion-title>
+  <ion-item button>Login / Signup</ion-item>
+  <ion-item button>My Profile</ion-item>
+  <ion-item button>Orders</ion-item>
+  <ion-item button>Address Book</ion-item>
+  <ion-item button>Track Order</ion-item>
+</ion-list> -->
+
+<ion-footer>
+  <ion-toolbar>
+    <div class="footer-content">
+      <div class="social-icons">
+        <a href="https://www.facebook.com/jenix.in" target="_blank">
+          <img src="../../assets/icon/fb.png" alt="Facebook" />
+        </a>
+        <a href="https://jenixindia.com/" target="_blank">
+          <img src="../../assets/icon/li.png" alt="LinkedIn" />
+        </a>
+        <a href="https://jenixindia.com/" target="_blank">
+          <img src="../../assets/icon/insta.png" alt="Instagram" />
+        </a>
+        <a href="https://www.youtube.com/channel/UCXI20ZxK5FrZf58buCsCdlQ" target="_blank">
+          <img src="../../assets/icon/you.png" alt="YouTube" />
+        </a>
+      </div>
+      <div class="payment-icons">
+        <img src="../../assets/icon/g pay.png" alt="G Pay" />
+        <img src="../../assets/icon/card.png" alt="MASTER CARD" />
+        <img src="../../assets/icon/paytm.png" alt="Paytm" />
+        <img src="../../assets/icon/phone.png" alt="PhonePe" />
+        <img src="../../assets/icon/visa.png" alt="VISA" />
+      </div>
+      <p>
+        © Copyright Fashion 2021. All Rights Reserved. Crafted by GAURAV
+        RAJPUROHIT.
+      </p>
+    </div>
+  </ion-toolbar>
+</ion-footer>

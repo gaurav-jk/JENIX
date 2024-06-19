@@ -1,0 +1,119 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-title>Cart</ion-title>
+    <ion-buttons slot="start">
+      <ion-menu-button menu="main-menu"></ion-menu-button>
+    </ion-buttons>
+    <ion-buttons slot="end">
+      <img alt="logo" id="header_logo" height="40" src="../../assets/icon/LOGO.png">
+    </ion-buttons>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true">
+  <ion-header collapse="condense">
+    <ion-toolbar>
+      <ion-title size="large">Cart</ion-title>
+    </ion-toolbar>
+  </ion-header>
+<h1>Cart</h1>
+
+<ion-list>
+  <ion-item *ngFor="let item of cart">
+    <ion-label>
+      <h2>{{ item.name }}</h2>
+      <p>Price: ₹{{ item.price }} (Original: ₹{{ item.originalPrice }})</p>
+      <p>Quantity: {{ item.quantity }}</p>
+    </ion-label>
+    <ion-button color="danger" (click)="removeFromCart(item)">
+      Remove
+    </ion-button>
+  </ion-item>
+</ion-list>
+<ion-item>
+  <ion-label>
+    <h2>Subtotal: ₹{{ subtotal }}</h2>
+  </ion-label>
+</ion-item>
+<ion-button expand="full" color="danger" (click)="clearCart()">Clear Cart</ion-button>
+<ion-button expand="full" color="primary" [routerLink]="['/checkout']">Proceed to Checkout</ion-button>
+
+  <div class="subscription-box">
+    <!-- <img src="../../../assets/icon/cart.png">
+    <p>Your cart is empty</p> -->
+    <button>Continue Shopping</button>
+    <h1>Direct buy From security system manufacturer, importer in India</h1>
+    <p>Lowest price with best quality</p>
+    <p>Get customised security system electronic products on demand</p>
+    <div class="email-subscription">
+      <input type="email" placeholder="example@gmail.com" />
+      <button ion-button>SUBSCRIBE</button>
+    </div>
+  </div>
+
+  <ion-item-group class="centered-group">
+    <ion-item-divider>
+      <ion-label>Categories</ion-label>
+    </ion-item-divider>
+      <!-- <ion-item button (click)="openCategory('Surveillance')">Surveillance</ion-item> -->
+    <ion-item button >Surveillance</ion-item>
+    <ion-item button >Access Control ( Lock )</ion-item>
+    <ion-item button >Access Control ( Lock )</ion-item>
+    <ion-item button >Intercom PABX</ion-item>
+    <ion-item button >Smart Home Automation</ion-item>
+    <ion-item button >WiFi Camera - Stand Alone System</ion-item>
+    <ion-item button >GPS Tracker</ion-item>
+    <ion-item button >4G Router</ion-item>
+    <ion-item button >Networking and Peripheral</ion-item>
+    <ion-item button >Security Alarm System</ion-item>
+    <ion-item button >Cable Convertor Connector</ion-item>
+    <ion-item button >Signal Booster</ion-item>
+    <ion-item button >Show More</ion-item>
+    <ion-item button >Show All Categories</ion-item>
+    <ion-item-divider>
+      <ion-label>Company</ion-label>
+    </ion-item-divider>
+    <ion-item button>About Us</ion-item>
+    <ion-item button>Contact Us</ion-item>
+    <ion-item button>Privacy Policy</ion-item>
+    <ion-item button>Terms and Conditions</ion-item>
+    <ion-item button>Refund Policy</ion-item>
+    <ion-item button>Shipping Policy</ion-item>
+    <ion-item-divider>
+      <ion-label>Contact</ion-label>
+    </ion-item-divider>
+    <ion-item button>7240226566</ion-item>
+    <ion-item button>jenixjain</ion-item>
+    <ion-item button>Jain enterprises, 63/79 Heera Path, Mansarovar, jaipur, rajasthan, India - 302020</ion-item>
+    <ion-item button>Warranty and RMA</ion-item>
+    </ion-item-group>
+  </ion-content>
+  
+<ion-footer>
+  <ion-toolbar>
+    <div class="footer-content">
+      <div class="social-icons">
+        <a href="https://www.facebook.com" target="_blank">
+          <img src="../../assets/icon/fb.png" alt="Facebook">
+        </a>
+        <a href="https://www.linkedin.com" target="_blank">
+          <img src="../../assets/icon/li.png" alt="LinkedIn">
+        </a>
+        <a href="https://www.instagram.com" target="_blank">
+          <img src="../../assets/icon/insta.png" alt="Instagram">
+        </a>
+        <a href="https://www.youtube.com" target="_blank">
+          <img src="../../assets/icon/you.png" alt="YouTube">
+        </a>
+      </div>
+      <div class="payment-icons">
+        <img src="../../assets/icon/g pay.png" alt="G Pay">
+        <img src="../../assets/icon/card.png" alt="MASTER CARD">
+        <img src="../../assets/icon/paytm.png" alt="Paytm">
+        <img src="../../assets/icon/phone.png" alt="PhonePe">
+        <img src="../../assets/icon/visa.png" alt="VISA">
+      </div>
+      <p>© Copyright Fashion 2021. All Rights Reserved. Crafted by GAURAV RAJPUROHIT.</p>
+    </div>
+  </ion-toolbar>
+</ion-footer>

@@ -1,3 +1,96 @@
 <ion-app>
-  <ion-router-outlet></ion-router-outlet>
+  <ion-menu menuId="main-menu" content-id="main">
+    <ion-header>
+      <ion-toolbar>
+        <ion-title>
+          <img alt="logo" id="header_logo" height="40" src="../../assets/icon/LOGO.png">
+        </ion-title>
+      </ion-toolbar>
+    </ion-header>
+    <ion-content>
+        <ion-menu-toggle>
+          <ion-item routerLink="home">
+            <ion-icon name="home-outline" slot="start"></ion-icon>
+            <ion-label>HOME</ion-label>
+          </ion-item>
+        </ion-menu-toggle>
+        <ion-menu-toggle>
+          <ion-item routerLink="categories">
+            <ion-icon name="copy-outline" slot="start"></ion-icon>
+            <ion-label>Categories</ion-label>
+               <!-- <ion-list>
+        <ion-item [routerLink]="['/category', 'Surveillance']">
+          <ion-label>Surveillance</ion-label>
+        </ion-item>
+        <ion-item [routerLink]="['/category', 'Access Control']">
+          <ion-label>Access Control (Lock)</ion-label>
+        </ion-item>
+        <ion-item [routerLink]="['/category', 'Intercom PABX']">
+          <ion-label>Intercom PABX</ion-label>
+        </ion-item>
+        <ion-item [routerLink]="['/category', 'Smart Home Automation']">
+          <ion-label>Smart Home Automation</ion-label>
+        </ion-item>
+        <ion-item [routerLink]="['/category', 'WiFi Camera']">
+          <ion-label>WiFi Camera - Stand Alone System</ion-label>
+        </ion-item>
+        <ion-item [routerLink]="">
+          <ion-label>GPS Tracker</ion-label>
+        </ion-item>
+        <ion-item [routerLink]="['/category', '4G Router']">
+          <ion-label>4G Router</ion-label>
+        </ion-item>
+        <ion-item [routerLink]="['/category', 'Networking']">
+          <ion-label>Networking and Peripheral</ion-label>
+        </ion-item>
+        <ion-item [routerLink]="['/category', 'Security Alarm']">
+          <ion-label>Security Alarm System</ion-item>
+        
+        <ion-item [routerLink]="['/category', 'Cable Converter']">
+          <ion-label>Cable Converter Connector</ion-label>
+        </ion-item>
+        <ion-item [routerLink]="['/category', 'Signal Booster']">
+          <ion-label>Signal Booster</ion-label>
+      </ion-list>  -->
+          </ion-item>
+        </ion-menu-toggle>
+        <ion-menu-toggle>
+          <ion-item routerLink="products">
+            <ion-icon name="pricetag-outline" slot="start"></ion-icon>
+            <ion-label>Products</ion-label>
+          </ion-item>
+        </ion-menu-toggle>
+        <ion-menu-toggle>
+          <ion-item routerLink="cart">
+            <ion-icon name="cart-outline" slot="start"></ion-icon>
+            <ion-label>Cart</ion-label>
+          </ion-item>
+        </ion-menu-toggle>
+        <ion-menu-toggle>
+          <ion-item routerLink="about-us">
+            <ion-icon name="people-outline" slot="start"></ion-icon>
+            <ion-label>About Us</ion-label>
+          </ion-item> 
+        </ion-menu-toggle>
+        <ion-menu-toggle>
+          <ion-item routerLink="bulk-purchase">
+            <ion-icon name="cash-outline" slot="start"></ion-icon>
+            <ion-label>Bulk Purchase</ion-label>
+          </ion-item> 
+        </ion-menu-toggle>
+        <ion-menu-toggle>
+          <ion-item routerLink="my-account">
+            <ion-icon name="key-outline" slot="start"></ion-icon>
+            <ion-label>My Account</ion-label>
+          </ion-item>
+        </ion-menu-toggle>
+        <ion-menu-toggle>
+          <ion-item routerLink="knowledge-base">
+            <ion-icon name="information-circle-outline" slot="start"></ion-icon>
+            <ion-label>Knowledge Base </ion-label>
+          </ion-item> 
+        </ion-menu-toggle>
+    </ion-content>
+  </ion-menu>
+  <ion-router-outlet id="main"></ion-router-outlet>
 </ion-app>
